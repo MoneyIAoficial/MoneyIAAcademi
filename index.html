@@ -102,6 +102,7 @@
         }
     </style>
 </head>
+<button onclick="openGerenciamento()">Gerenciamento</button>
 <button onclick="openBacBo()">Bac bo</button>
  <button onclick="openFootballStudio()">Football Studio</button>
 <button id="moneyiaRoletaButton" onclick="openMoneyIARoleta()">MoneyIA Roleta</button>
@@ -283,6 +284,17 @@
 
             window.open(bacBoURL, '_blank', popupFeatures);
         }
+
+    function openGerenciamento() {
+        var gerenciamentoURL = 'https://moneyiaoficial.github.io/Planilha-MoneyIA/'; // Substitua 'URL_DA_SUA_PAGINA' pela URL desejada
+        var popupWidth = 600;
+        var popupHeight = 400;
+        var leftPosition = (screen.width - popupWidth) / 2;
+        var topPosition = (screen.height - popupHeight) / 2;
+        var popupFeatures = 'width=' + popupWidth + ',height=' + popupHeight + ',left=' + leftPosition + ',top=' + topPosition + ',resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no,status=no';
+
+        window.open(gerenciamentoURL, '_blank', popupFeatures);
+    }
     </script>
 </body>
 </html>
